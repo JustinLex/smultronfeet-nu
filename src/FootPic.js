@@ -3,16 +3,12 @@ import './FootPic.css';
 
 
 const FootPic = (props) => (
-    <div class={'foot-pic'}>
-        <img src={props.pic}></img>
+    <div className={'foot-pic'}>
+        <img alt={props.name} src={props.pic}/>
         <h4>{props.name}</h4>
-        <div class={'price'}>
+        <div className={'price'}>
         <strong>420.69 kr</strong> <button>Buy now</button>
         </div>
-        {/*image*/}
-        {/*name of image*/}
-        {/*[price] [buy here button]*/}
-        {props.children}
     </div>
 )
 
