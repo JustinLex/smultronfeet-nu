@@ -8,7 +8,7 @@ const FootPic = (props) => (
         <h4>{props.name}</h4>
         <div className={'price'}>
                 <strong>420.69 kr</strong>
-                <a style={{display: 'flex'}} href={'https://www.systembolaget.se/dryck/aperitif-dessert/caprice-kir-296601'}>
+                <a style={{display: 'flex', textDecoration: 'none'}} href={'https://www.systembolaget.se/dryck/aperitif-dessert/caprice-kir-296601'}>
                         <button>Buy now</button>
                 </a>
 
