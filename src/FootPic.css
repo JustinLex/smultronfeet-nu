@@ -1,0 +1,34 @@
+.foot-pic{
+    width: 20rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+    border-style: solid;
+    border-radius: 1rem;
+}
+
+img {
+    width: 19rem;
+    height: 19rem;
+}
+
+strong, button {
+    height: 100%;
+    font-size: 1rem;
+}
+
+h4 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    height: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
