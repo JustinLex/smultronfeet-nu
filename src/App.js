@@ -44,7 +44,7 @@ function App() {
 
             <div style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
                 <div style={{'width': '20rem', fontSize: '1rem'}}>
-                    <h2>About our feet</h2>
+                    <h2 style={{fontSize: '2rem'}}>About our feet</h2>
                     <p>
                         Foot pics are hot hot hot, and you love to see ‘em! At their base level they are pictures of, or that contain, (usually women’s) feet as a prominent visual element. For our purposes here, we are interested mostly in pics in which feet are the central visual element, to the exclusion of other parts of the body, but the term can ecompass more than this.
                     </p>
