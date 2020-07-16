@@ -5,3 +5,4 @@ podman run -it --rm -v ./:/usr/src/app:Z -w /usr/src/app node npm run build
 
 rm -rf /var/www/smultronfeet.nu
 cp -a build /var/www/smultronfeet.nu
+chown -R nginx:nginx /var/www/smultronfeet.nu
