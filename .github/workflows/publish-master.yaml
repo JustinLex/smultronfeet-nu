@@ -1,0 +1,30 @@
+name: Build and push website container
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-push:
+    name: Build and push website container
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
+      - name: Build OCI image for smultronfeet-nu
+        uses: redhat-actions/buildah-build@v2
+        with:
+          image: ghcr.io/justinlex/smultronfeet-nu
+          tags: "latest ${{ github.sha }}"
+          context: '.'
+      - name: Log in to gh registry
+        uses: redhat-actions/podman-login@v1
+        with:
+          username: "${{ github.actor }}"
+          password: "${{ secrets.GITHUB_TOKEN }}"
+          registry: "ghcr.io/justinlex"
+      - name: Publish OCI images  # This is where kubernetes will download the images from
+        run:  |
+          podman push ghcr.io/justinlex/smultronfeet-nu:${{ steps.release_version.outputs.version }}
+          podman push ghcr.io/justinlex/smultronfeet-nu:latest
