@@ -16,6 +16,8 @@ jobs:
           image: ghcr.io/justinlex/smultronfeet-nu
           tags: "latest ${{ github.sha }}"
           context: '.'
+          containerfiles: |-
+            Containerfile
       - name: Log in to gh registry
         uses: redhat-actions/podman-login@v1
         with:
