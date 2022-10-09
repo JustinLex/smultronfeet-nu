@@ -1,5 +1,7 @@
 Dumb joke website for an inside joke with my university friends. Spun up in less than 12 hours using my home server and Create React App.
 
+Update dependencies by running `podman run -it --rm -v ./:/usr/src/app:Z -w /usr/src/app node npm update`
+
 [https://smultronfeet.nu/](https://smultronfeet.nu/)
 
 ## Available Scripts
