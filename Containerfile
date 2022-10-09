@@ -1,4 +1,4 @@
-FROM node as builder
+FROM docker.io/library/node as builder
 
 WORKDIR /code
 
